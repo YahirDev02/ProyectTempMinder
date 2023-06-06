@@ -1,0 +1,7 @@
+{
+  "name": "CareBeat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
