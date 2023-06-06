@@ -1,31 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>CareBeat </ion-title>
+    <ion-title> CareBeat </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <img 
+    <img
       src="../../assets/imagen-principal.svg"
       alt="imagen_principal"
-      class="imagen_principal" 
+      class="imagen_principal"
     />
   </ion-card>
+  <div class="datos">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Latidos por minuto:</ion-card-subtitle>
+        <ion-card-title>0</ion-card-title>
+      </ion-card-header>
+    </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Latidos por minuto:</ion-card-title>
-      <ion-card-subtitle>0</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Estado</ion-card-title>
-      <ion-card-subtitle>0</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Estado:</ion-card-subtitle>
+        <ion-card-title>0</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
 
   <ion-fab slot="fixed" horizontal="center" vertical="bottom">
     <ion-fab-button color="danger" size="big">
