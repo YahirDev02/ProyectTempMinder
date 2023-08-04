@@ -16,7 +16,11 @@
     <ion-card>
       <ion-card-header>
         <ion-card-subtitle>Latidos por minuto:</ion-card-subtitle>
-        <ion-card-title>0</ion-card-title>
+        <ion-card-title>
+          <ion-item>
+            {{ item | async | json  }}
+          </ion-item>
+        </ion-card-title>
       </ion-card-header>
     </ion-card>
 
