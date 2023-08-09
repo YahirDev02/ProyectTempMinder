@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true">
   <ion-card>
     <img
-      src="../../assets/imagen-principal.svg"
+      src="../../assets/imagen-principal2.svg"
       alt="imagen_principal"
       class="imagen_principal"
     />
@@ -15,11 +15,11 @@
   <div class="datos">
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Latidos por minuto:</ion-card-subtitle>
+        <ion-card-subtitle
+          >Te encuentras en una temperatura de:</ion-card-subtitle
+        >
         <ion-card-title>
-          <ion-item>
-            {{ item | async | json  }}
-          </ion-item>
+          <ion-item> {{ item | async | json }} </ion-item>
         </ion-card-title>
       </ion-card-header>
     </ion-card>
