@@ -6,12 +6,13 @@ export const environment = {
   production: false,
 
   firebaseConfig : {
-    apiKey: "AIzaSyC85TBRyzdrS8BMHFWuZoGcuBGxlhfP9FU",
-    authDomain: "proyectofausto9a.firebaseapp.com",
-    projectId: "proyectofausto9a",
-    storageBucket: "proyectofausto9a.appspot.com",
-    messagingSenderId: "958826619941",
-    appId: "1:958826619941:web:ccc4389e9450594f0e4bcc"
+    apiKey: "AIzaSyBHpG4uyhn3SF5f5x9D3n7qFI_c-d-RkqA",
+    authDomain: "carebeat-d6096.firebaseapp.com",
+    databaseURL: "https://carebeat-d6096-default-rtdb.firebaseio.com",
+    projectId: "carebeat-d6096",
+    storageBucket: "carebeat-d6096.appspot.com",
+    messagingSenderId: "736311729829",
+    appId: "1:736311729829:web:585272894f295ae759f74c"
   },
 };
 

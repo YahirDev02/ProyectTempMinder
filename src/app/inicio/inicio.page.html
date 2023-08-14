@@ -15,19 +15,32 @@
   <div class="datos">
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle
-          >Te encuentras en una temperatura de:</ion-card-subtitle
+        <ion-card-subtitle>
+          <ion-title style="color: white;">
+            El sensor detecta una temperatura de:
+          </ion-title>
+          </ion-card-subtitle
         >
         <ion-card-title>
-          <ion-item> {{ item | async | json }} </ion-item>
+          <ion-item>
+            {{ item | async | json }} 
+          </ion-item>
         </ion-card-title>
       </ion-card-header>
     </ion-card>
 
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Estado:</ion-card-subtitle>
-        <ion-card-title>0</ion-card-title>
+        <ion-card-subtitle>
+            <ion-title style="color: white;">
+              Estado:
+            </ion-title>
+          </ion-card-subtitle>
+        <ion-card-title>
+          <ion-item>
+            {{ itemEstatus | async | json }}
+          </ion-item>
+        </ion-card-title>
       </ion-card-header>
     </ion-card>
   </div>

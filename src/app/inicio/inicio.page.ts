@@ -9,22 +9,25 @@ import {Observable} from 'rxjs'
 })
 export class InicioPage implements OnInit {
 
-  bpmData: any[] = [];
-
   itemRef: AngularFireObject<any>;
   item: Observable<any>;
+  itemRefStatus: AngularFireObject<any>;
+  itemEstatus: Observable<any>;
   constructor(private db: AngularFireDatabase) {
-    this.itemRef = db.object('brazalete');
+    this.itemRef = db.object('sensor');
     this.item = this.itemRef.valueChanges();
+
+    this.itemRefStatus = db.object('estado');
+    this.itemEstatus = this.itemRefStatus.valueChanges();
   }
 
-  updateBPM(e: any){
+  /*updateBPM(e: any){
     if(e.detail.checked){
       this.itemRef.update({ bpm: 'Latidos' })
     } else {
       this.itemRef.update({ bpm: 'Sin latidos' })
     }
-  }
+  }*/
 
 
   ngOnInit() {
